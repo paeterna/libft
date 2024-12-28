@@ -15,7 +15,8 @@ ft_isascii.c ft_lstlast.c ft_putchar_fd.c ft_strlcat.c ft_tolower.c \
 ft_isdigit.c ft_lstmap.c ft_putendl_fd.c ft_strlcpy.c ft_toupper.c \
 ft_isprint.c ft_lstnew.c ft_putnbr_fd.c ft_strlen.c \
 ft_itoa.c ft_lstsize.c ft_putstr_fd.c ft_strmapi.c get_next_line.c \
-ft_printf.c ft_puthex.c ft_put.c ft_atof.c ft_putstrs_fd.c
+ft_printf.c ft_puthex.c ft_put.c ft_atof.c ft_putstrjoin_fd.c \
+ft_putstrs_fd.c
 
 SRCS_BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
 ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c

@@ -19,11 +19,15 @@ void	ft_bzero(void *s, size_t n)
 
 /*
 #include <stdio.h>
-int main()
+
+int	main(void)
 {
-	int i = 0;
-	char str[50] = "hello my name is osadeddi";
-	char *s;
+	int		i;
+	char	str[50];
+	char	*s;
+
+	i = 0;
+	str[50] = "hello my name is osadeddi";
 	ft_bzero(str, 5);
 	s = str + 5;
 	printf("After bzero str = %s\ns = %s\n", str,s);
@@ -35,6 +39,6 @@ int main()
 			printf("%c", str[i]);
 		i++;
 	}
-	return 0;
+	return (0);
 }
 */

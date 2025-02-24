@@ -6,7 +6,7 @@
 /*   By: osadeddi <osadeddi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 16:03:07 by osadeddi          #+#    #+#             */
-/*   Updated: 2024/12/28 17:23:54 by osadeddi         ###   ########.fr       */
+/*   Updated: 2025/02/24 19:52:57 by osadeddi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,12 +48,13 @@ void	ft_putendl_fd(char *s, int fd);
 int		ft_putnbr_fd(int n, int fd);
 int		ft_putstr_fd(char *s, int fd);
 int		ft_putstrjoin_fd(int fd, int num_of_strings, ...);
-int		ft_putstrs_fd(char **s, int num_of_strings, int fd);
+int		ft_putstrs_fd(char **s, int fd);
 char	**ft_split(char const *s, char c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(char *s1);
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin_va(int num_of_strings, ...);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlen(const char *s);

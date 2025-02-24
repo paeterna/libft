@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: osadeddi <osadeddi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: malsharq <malsharq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 20:33:00 by osadeddi          #+#    #+#             */
-/*   Updated: 2024/09/03 18:49:11 by osadeddi         ###   ########.fr       */
+/*   Updated: 2025/02/19 21:00:02 by malsharq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 char	*ft_strchr(const char *s, int c)
 {
+	if (!s)
+		return (NULL);
 	while (*s)
 	{
 		if (*s == (char)c)
@@ -22,13 +24,13 @@ char	*ft_strchr(const char *s, int c)
 	}
 	if ((char)c == '\0')
 		return ((char *)s);
-	return (0);
+	return (NULL);
 }
 
 // #include <string.h>
 // #include <stdio.h>
 
-// int	main()
+// int	main(void)
 // {
 // 	char str[] = "teste";
 // 	char c = '\0';
@@ -36,5 +38,5 @@ char	*ft_strchr(const char *s, int c)
 // 	printf("%s\n", str);
 // 	printf("%s\n", strchr(str, c));
 // 	printf("%s\n", str);
-// 	return 0;
+// 	return (0);
 // }

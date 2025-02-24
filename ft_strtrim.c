@@ -38,12 +38,15 @@ char	*ft_strtrim(char const *s1, char const *set)
 }
 /*
 #include <stdio.h>
+
 int	main(void)
 {
-	char	*s1 = "vvv";
-	char	*set = " v";
+	char	*s1;
+	char	*set;
 	char	*ret;
 
+	s1 = "vvv";
+	set = " v";
 	ret = ft_strtrim(s1, set);
 	printf("%s\n", ret);
 	return (0);

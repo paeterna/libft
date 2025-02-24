@@ -31,12 +31,14 @@ char	*ft_strdup(char *src)
 	return (str);
 }
 /*
-#include<stdio.h>
+#include <stdio.h>
+
 int	main(void)
 {
-	char	a[] = "la la la laaaaa";
+	char	a[];
 	char	*b;
 
+	a[] = "la la la laaaaa";
 	b = ft_strdup(a);
 	printf("a = %s\nb = %s\n",a,b);
 	free(b);

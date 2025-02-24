@@ -37,7 +37,7 @@ int	ft_putnbr_fd(int n, int fd)
 	return (i);
 }
 /*
-int	main()
+int	main(void)
 {
 	ft_putnbr_fd(42, 1);
 	write(1, "\n", 1);

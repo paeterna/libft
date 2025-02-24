@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
+#include <stdio.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -29,10 +29,12 @@ void	*ft_memchr(const void *s, int c, size_t n)
 }
 
 /*
-int	main()
+int	main(void)
 {
-	char str[] = "Hello World!";
-	char *ret;
+	char	str[];
+	char	*ret;
+
+	str[] = "Hello World!";
 	ret = ft_memchr(str, 'o', 12);
 	printf("String after 'o' is %s\n", ret);
 	return (0);

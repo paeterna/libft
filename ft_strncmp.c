@@ -29,10 +29,12 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 
 int	main(void)
 {
-	char			a[] = "abvd";
-	char			b[] = "abcd";
+	char			a[];
+	char			b[];
 	unsigned int	n;
 
+	a[] = "abvd";
+	b[] = "abcd";
 	n = 2;
 	printf("a = %s\nb = %s\nn = %d",a,b,ft_strncmp(a,b,i));
 }

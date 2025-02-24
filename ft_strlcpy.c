@@ -31,15 +31,17 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	return (i);
 }
 /*
-#include<stdio.h>
+#include <stdio.h>
 
 int	main(void)
 {
-	char a[] = "hello world";
-	char b[5];
-	unsigned int c = 5;
-	unsigned int d;
+	char			a[];
+	char			b[5];
+	unsigned int	c;
+	unsigned int	d;
 
+	a[] = "hello world";
+	c = 5;
 	d = ft_strlcpy(b,a,c);
 	printf("a = %s, len = %d\nb = %s, len = %d" , a , d+1 , b , c);
 	return (0);

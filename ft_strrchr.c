@@ -38,5 +38,5 @@ char	*ft_strrchr(const char *s, int c)
 // 	printf("%s\n", str);
 // 	printf("%s\n", strrchr(str, c));
 // 	printf("%s\n", str);
-// 	return 0;
+// 	return (0);
 // }

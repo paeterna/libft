@@ -45,9 +45,10 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 int	main(void)
 {
-	char	src[] = "Geekos";
+	char	src[];
 	char	dest[100];
 
+	src[] = "Geekos";
 	memmove(dest, src, strlen(src)+1);
 	printf("Copied string is %s", dest);
 	return (0);

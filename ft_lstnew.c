@@ -25,11 +25,14 @@ t_list	*ft_lstnew(void *content)
 }
 
 /*
-#include<stdio.h>
-int main()
+#include <stdio.h>
+
+int	main(void)
 {
-	t_list *new = ft_lstnew("Hello");
+	t_list	*new;
+
+	new = ft_lstnew("Hello");
 	printf("%s\n", (char *)new->content);
-	return 0;
+	return (0);
 }
 */

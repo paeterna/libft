@@ -41,11 +41,13 @@ int	ft_atoi(const char *str)
 
 void	main(void)
 {
-	char	a[] = "   ---+-+-2147884836501";
-	char	b[] = "21474836487";
+	char	a[];
+	char	b[];
 	int		x;
 	int		y;
 
+	a[] = "   ---+-+-2147884836501";
+	b[] = "21474836487";
 	x = ft_atoi(a);
 	y = ft_atoi(b);
 	printf("x = %d\ny = %d\n",x,y);

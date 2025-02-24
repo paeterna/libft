@@ -36,11 +36,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (a);
 }
 /*
-int	main()
+int	main(void)
 {
-	char	*str = "Hello World";
+	char	*str;
 	char	*sub;
 
+	str = "Hello World";
 	sub = ft_substr(str, 3, 5);
 	write(1, sub, 5);
 	free(sub);

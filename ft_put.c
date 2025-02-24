@@ -52,7 +52,7 @@ int	pf_putnbr(int n)
 
 int	pf_putnbr_unsigned(unsigned int n)
 {
-	int		i;
+	int	i;
 
 	i = 0;
 	if (n > 9)

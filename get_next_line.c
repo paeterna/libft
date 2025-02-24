@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: osadeddi <osadeddi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: malsharq <malsharq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/08 17:21:47 by osadeddi          #+#    #+#             */
-/*   Updated: 2024/12/24 19:01:20 by osadeddi         ###   ########.fr       */
+/*   Updated: 2025/02/17 17:44:31 by malsharq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,9 +83,10 @@ static void	*read_fun(int fd, char **str, char *line)
 
 char	*get_next_line(int fd)
 {
-	static char	*str = NULL;
+	static char	*str;
 	char		*line;
 
+	str = NULL;
 	line = NULL;
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (free_fun(&str, line, NULL));

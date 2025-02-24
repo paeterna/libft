@@ -19,7 +19,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 	if (!s)
 		return (NULL);
-	str = malloc (ft_strlen(s) + 1);
+	str = malloc(ft_strlen(s) + 1);
 	if (!str)
 		return (NULL);
 	i = 0;
@@ -33,7 +33,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 }
 
 /*
-char ft_toupper(unsigned int i, char c)
+char	ft_toupper(unsigned int i, char c)
 {
 	(void)i;
 	if (c >= 'a' && c <= 'z')
@@ -43,10 +43,13 @@ char ft_toupper(unsigned int i, char c)
 
 #include <stdio.h>
 
-int main()
+int	main(void)
 {
-	char *s = "Hello";
-	char *str = ft_strmapi(s, &ft_toupper);
+	char	*s;
+	char	*str;
+
+	s = "Hello";
+	str = ft_strmapi(s, &ft_toupper);
 	printf("%s\n", str);
 	free(str);
 	return (0);

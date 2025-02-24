@@ -30,11 +30,14 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 }
 
 /*
-int	main()
+int	main(void)
 {
-	char str1[] = "Hello World!";
-	char str2[] = "Hello World!";
-	int ret;
+	char	str1[];
+	char	str2[];
+	int		ret;
+
+	str1[] = "Hello World!";
+	str2[] = "Hello World!";
 	ret = ft_memcmp(str1, str2, 12);
 	printf("String after 'o' is %d\n", ret);
 	return (0);

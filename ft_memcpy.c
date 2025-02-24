@@ -28,14 +28,15 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 /*
 #include <stdio.h>
-int main()
-{
-	char src[50] = "hello my name is osadeddi";
-	char dest[50];
 
+int	main(void)
+{
+	char	src[50];
+	char	dest[50];
+
+	src[50] = "hello my name is osadeddi";
 	memcpy(dest, src, strlen(src)+1);
 	printf("After memcpy dest = %s\n", dest);
-
-	return 0;
+	return (0);
 }
 */

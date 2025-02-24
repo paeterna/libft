@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;
 
@@ -25,6 +25,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 }
 /*
 #include <stdio.h>
+
 void	ft_toupper(unsigned int i, char *c)
 {
 	(void)i;
@@ -32,9 +33,11 @@ void	ft_toupper(unsigned int i, char *c)
 		*c -= 32;
 }
 
-int main()
+int	main(void)
 {
-	char s[] = "Hello";
+	char	s[];
+
+	s[] = "Hello";
 	ft_striteri(s, &ft_toupper);
 	printf("%s\n", s);
 }

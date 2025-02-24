@@ -18,7 +18,7 @@ int	ft_isdigit(int c)
 }
 
 /*
-#include<stdio.h>
+#include <stdio.h>
 
 void	main(void)
 {

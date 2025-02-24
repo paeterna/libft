@@ -29,9 +29,9 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	last->next = new;
 }
 /*
-void *ft_lstnew(void *content)
+void	*ft_lstnew(void *content)
 {
-	t_list *new;
+	t_list	*new;
 
 	new = malloc(sizeof(t_list));
 	if(!new)
@@ -41,13 +41,16 @@ void *ft_lstnew(void *content)
 	return (new);
 }
 
-int	main()
+int	main(void)
 {
-	t_list	*new1 = ft_lstnew("Hello");
-	t_list	*new = ft_lstnew("World");
+	t_list	*new1;
+	t_list	*new;
+
+	new1 = ft_lstnew("Hello");
+	new = ft_lstnew("World");
 	ft_lstadd_back(&new1, new);
 	printf("%s\n", (char *)new1->content);
 	printf("%s\n", (char *)new1->next->content);
-	return 0;
+	return (0);
 }
 */

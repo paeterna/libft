@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: osadeddi <osadeddi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: malsharq <malsharq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 01:48:24 by osadeddi          #+#    #+#             */
-/*   Updated: 2024/09/03 18:49:32 by osadeddi         ###   ########.fr       */
+/*   Updated: 2025/02/09 18:31:32 by malsharq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,14 @@ size_t	ft_strlen(const char *s)
 	return (b);
 }
 /*
-void main()
+void	main(void)
 {
-	char a[] = "omar";
+	char	a[];
 
+	a[] = "omar";
 	ft_strlen(a);
 	printf(" a length is %d", ft_strlen(a));
 }
-#include<stdio.h>
+#include <stdio.h>
+
 */

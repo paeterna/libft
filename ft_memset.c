@@ -27,9 +27,11 @@ void	*ft_memset(void *s, int c, size_t n)
 #include <stdio.h>
 #include <stdlib.h>
 
-int	main()
+int	main(void)
 {
-	char str[50] = "Hello World!";
+	char	str[50];
+
+	str[50] = "Hello World!";
 	printf("%s\n", str);
 	ft_memset(str + 6, 'a', 5);
 	printf("%s\n", str);

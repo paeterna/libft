@@ -6,7 +6,7 @@
 /*   By: osadeddi <osadeddi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 14:25:25 by osadeddi          #+#    #+#             */
-/*   Updated: 2024/09/03 18:49:42 by osadeddi         ###   ########.fr       */
+/*   Updated: 2025/02/08 18:18:46 by osadeddi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,15 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 			return ((char *)&haystack[i]);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
 /*
-int	main()
+int	main(void)
 {
-	char str[] = "Hello World!";
-	char *ret;
+	char	str[];
+	char	*ret;
+
+	str[] = "Hello World!";
 	ret = ft_strnstr(str, "o", 12);
 	printf("String after 'o' is: %s\n", ret);
 	return (0);

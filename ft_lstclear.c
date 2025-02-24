@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void*))
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*p;
 	t_list	*temp;
@@ -77,31 +77,34 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	last->next = new;
 }
 
-#include<stdio.h>
+#include <stdio.h>
 
-int main()
+int	main(void)
 {
-	t_list *lst = ft_lstnew(strdup("Hello"));
-	t_list *lst1 = ft_lstnew(strdup("welcome"));
-	t_list *lst2 = ft_lstnew(strdup("to"));
-	t_list *lst3 = ft_lstnew(strdup("new"));
-	t_list *lst4 = ft_lstnew(strdup("Home"));
+	t_list	*lst;
+	t_list	*lst1;
+	t_list	*lst2;
+	t_list	*lst3;
+	t_list	*lst4;
+	t_list	*current;
 
+	lst = ft_lstnew(strdup("Hello"));
+	lst1 = ft_lstnew(strdup("welcome"));
+	lst2 = ft_lstnew(strdup("to"));
+	lst3 = ft_lstnew(strdup("new"));
+	lst4 = ft_lstnew(strdup("Home"));
 	ft_lstadd_back(&lst,lst1);
 	ft_lstadd_back(&lst,lst2);
 	ft_lstadd_back(&lst,lst3);
 	ft_lstadd_back(&lst,lst4);
-
 	printf("nb = %d\n", ft_lstsize(lst));
-
-	t_list *current = lst;
+	current = lst;
 	while (current->next != lst2)
 		current = current->next;
 	current->next = lst2->next;
 	lst2->next = NULL;
-
 	ft_lstclear(&lst2, del);
 	printf("na = %d\n", ft_lstsize(lst));
-	return 0;
+	return (0);
 }
 */

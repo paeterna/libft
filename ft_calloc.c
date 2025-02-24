@@ -24,14 +24,14 @@ void	*ft_calloc(size_t num, size_t size)
 }
 
 /*
-int	main()
+int	main(void)
 {
-	int *ptr;
+	int	*ptr;
 	int	*p;
+	int	n;
 
-	int n = 5;
+	n = 5;
 	ptr = (int *)ft_calloc(n, sizeof(int));
-
 	if (ptr == NULL)
 	{
 		printf("Memory not .allocated\n");

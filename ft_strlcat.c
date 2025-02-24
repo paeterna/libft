@@ -44,11 +44,13 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 
 int	main(void)
 {
-	char			a[10] = "hello";
-	char			b[] = " world";
+	char			a[10];
+	char			b[];
 	unsigned int	c;
 	unsigned int	d;
 
+	a[10] = "hello";
+	b[] = " world";
 	c = 10;
 	d = ft_strlcat(a,b,c);
 	printf("a = %s, len = %d",a,d);
